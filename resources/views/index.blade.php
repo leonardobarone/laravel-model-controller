@@ -7,6 +7,11 @@
         <title>Laravel Model Controller</title>
     </head>
     <body>
-        <h1>certamente che esiste questa vista</h1>
+        <h1>I film presenti nel database:</h1>
+        <ul>
+            @foreach ($movies as $movie)
+                <li>{{$movie['title']}}</li>
+            @endforeach
+        </ul>
     </body>
 </html>
